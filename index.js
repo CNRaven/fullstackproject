@@ -1,6 +1,6 @@
 const express = require('express');
 const mongoose = require('mongoose');
-const key = require('./config/keys');
+const keys = require('./config/keys');
 
 const app = express();
 
