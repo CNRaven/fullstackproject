@@ -11,7 +11,7 @@ mongoose.connect(keys.mongoURI, {
     useUnifiedTopology: true
 });
 
-app.use(express.urlencoded(extended: true));
+app.use(express.urlencoded({extended: true}));
 app.use(express.json());
 
 app.get('/', (req, res) => {
