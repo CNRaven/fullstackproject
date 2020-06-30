@@ -18,21 +18,7 @@ app.use(express.json());
 app.post('/register', async(req, res) => {
     console.log(req.body);
     const user = new User(req.body);
-
-    await user.save();
-
-    // async function saveUser() {
-    //     await user.save();
-    // }
-
-    // function check() {
-    //     try {
-    //         saveUser();
-    //     } catch(e) {
-    //         console.log(e);
-    //     }
-    // };
-    
+    await user.save();    
     res.status(200).json({
         message: 'Form data received'
     });
